@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<application xmlns="http://ns.adobe.com/air/application/4.0">
+  <id>com.myShopper.shopMgt</id>
+  <versionNumber>1.5</versionNumber>
+  <supportedProfiles>mobileDevice</supportedProfiles>
+  <filename>MySHOPPER-shopMgt</filename>
+  <name>
+    <text xml:lang="en">shop mgt system</text>
+    <text xml:lang="zh">shop mgt system</text>
+    <text xml:lang="ja">shop mgt system</text>
+  </name>
+  <android>
+    <manifestAdditions><![CDATA[<manifest android:installLocation="auto">
+	<supports-screens android:largeScreens="true" android:normalScreens="false" android:requiresSmallestWidthDp="800" android:smallScreens="false" android:xlargeScreens="true" />
+	<uses-sdk android:minSdkVersion="8" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-feature android:required="true" android:name="android.hardware.touchscreen.multitouch" />
+	<application>
+		<activity>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:scheme="myshoppersp" />
+			</intent-filter>
+		</activity>
+	</application>
+</manifest>]]></manifestAdditions>
+  </android>
+  <iPhone>
+    <InfoAdditions><![CDATA[<key>UIStatusBarStyle</key>
+<string>UIStatusBarStyleBlackOpaque</string>
+<key>UIRequiresPersistentWiFi</key>
+<string>YES</string>
+<key>UIPrerenderedIcon</key>
+<true />
+<key>UIApplicationExitsOnSuspend</key>
+<true />
+<key>CFBundleURLTypes</key>
+<array>
+	<dict>
+		<key>CFBundleURLSchemes</key>
+		<array>
+			<string>myshoppersp</string>
+		</array>
+		<key>CFBundleURLName</key>
+		<string>com.myShopper.shopMgt</string>
+	</dict>
+</array>
+<key>UIDeviceFamily</key>
+<array>
+	<!-- iPhone support -->
+	<!--<string>1</string>-->
+	<!-- iPad support -->
+	<string>2</string>
+</array>]]></InfoAdditions>
+    <requestedDisplayResolution>high</requestedDisplayResolution>
+  </iPhone>
+  <initialWindow>
+    <title>My SHOPPER - shop management system</title>
+    <content>appMain.swf</content>
+    <visible>true</visible>
+    <fullScreen>true</fullScreen>
+    <!--<autoOrients>false</autoOrients>-->
+    <!--<aspectRatio>landscape</aspectRatio>-->
+    <renderMode>direct</renderMode>
+    <!--<depthAndStencil>true</depthAndStencil>-->
+    <!-- required for 3D -->
+    <systemChrome>standard</systemChrome>
+    <autoOrients>false</autoOrients>
+    <aspectRatio>landscape</aspectRatio>
+  </initialWindow>
+  <icon>
+    <image48x48>icons/icon_48.png</image48x48>
+    <image57x57>icons/icon_57.png</image57x57>
+    <image72x72>icons/icon_72.png</image72x72>
+    <image76x76>icons/icon_76.png</image76x76>
+    <image96x96>icons/icon_96.png</image96x96>
+    <image114x114>icons/icon_114.png</image114x114>
+    <image120x120>icons/icon_120.png</image120x120>
+    <image144x144>icons/icon_144.png</image144x144>
+    <image152x152>icons/icon_152.png</image152x152>
+    <!--<image512x512>icons/icon_512.png</image512x512>-->
+  </icon>
+  <!-- 
+	AIR options:
+	http://livedocs.adobe.com/flex/3/html/File_formats_1.html#1043413
+	
+	AIR mobile options:
+	http://help.adobe.com/en_US/air/build/WSfffb011ac560372f-5d0f4f25128cc9cd0cb-7ffe.html
+	
+	iOS icons guidelines:
+	http://developer.apple.com/library/ios/#documentation/userexperience/conceptual/mobilehig/IconsImages/IconsImages.html
+	
+	Android manifest documentation:
+	http://developer.android.com/guide/topics/manifest/manifest-intro.html
+	-->
+  <description>
+    <text xml:lang="en">SHOP MANAGEMENT SYSTEM | ONLINE SHOP | POS SYSTEM | ONLINE PAYMENT SYSTEM</text>
+    <text xml:lang="zh">SHOP MANAGEMENT SYSTEM | ONLINE SHOP | POS SYSTEM | ONLINE PAYMENT SYSTEM</text>
+    <text xml:lang="ja">SHOP MANAGEMENT SYSTEM | ONLINE SHOP | POS SYSTEM | ONLINE PAYMENT SYSTEM</text>
+  </description>
+  <allowBrowserInvocation>true</allowBrowserInvocation>
+  <versionLabel>v0.1.5 beta</versionLabel>
+  <extensions>
+    <extensionID>pl.mateuszmackowiak.nativeANE.NativeDialogs</extensionID>
+  </extensions>
+</application>

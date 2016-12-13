@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<application xmlns="http://ns.adobe.com/air/application/3.9">
+  <id>com.myShopper.shopMgt</id>
+  <versionNumber>1.5.0</versionNumber>
+  <filename>MySHOPPER-shopMgt</filename>
+  <name>
+    <text xml:lang="en">My SHOPPER - shop management system</text>
+  </name>
+  <copyright>www.my-shopper.com</copyright>
+  <initialWindow>
+    <title>My SHOPPER - shop management system</title>
+    <content>appMain.swf</content>
+    <systemChrome>standard</systemChrome>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <minimizable>true</minimizable>
+    <maximizable>true</maximizable>
+    <resizable>true</resizable>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>660</height>
+    <minSize>1000 660</minSize>
+    <aspectRatio>landscape</aspectRatio>
+    <fullScreen>true</fullScreen>
+  </initialWindow>
+  <!-- 
+	More options:
+	http://livedocs.adobe.com/flex/3/html/File_formats_1.html#1043413
+	-->
+  <description>
+    <text xml:lang="en">SHOP MANAGEMENT SYSTEM | ONLINE SHOP | POS SYSTEM | ONLINE PAYMENT SYSTEM</text>
+  </description>
+  <supportedProfiles>desktop</supportedProfiles>
+  <supportedLanguages>en</supportedLanguages>
+  <allowBrowserInvocation>true</allowBrowserInvocation>
+  <icon>
+    <image16x16>icons/MySHOPPER-shopMgt16.png</image16x16>
+    <image32x32>icons/MySHOPPER-shopMgt32.png</image32x32>
+    <image48x48>icons/MySHOPPER-shopMgt48.png</image48x48>
+    <image128x128>icons/MySHOPPER-shopMgt128.png</image128x128>
+  </icon>
+  <versionLabel>v1.5.0</versionLabel>
+</application>
